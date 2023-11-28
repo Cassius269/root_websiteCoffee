@@ -1,8 +1,10 @@
+/* Tout type d'écran : stylisation générale*/
+
 :root {
-    --heighth_input:3em;
-    --no_styleForul:none;
-    --no_underlineForLink:none;
-    --border-radius_input:12px;
+    --heighth_input: 3em;
+    --no_styleForul: none;
+    --no_underlineForLink: none;
+    --border-radius_input: 12px;
 }
 
 * {
@@ -32,8 +34,8 @@ body {
 
 nav ul {
     list-style-type: var(--no_styleForul);
-    position:relative;
-    top:15px;
+    position: relative;
+    top: 15px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -41,8 +43,9 @@ nav ul {
 }
 
 nav li {
-    padding:4px 12px;
+    padding: 4px 12px;
 }
+
 nav li:hover {
     background-color: #93684d;
     color: white;
@@ -50,21 +53,21 @@ nav li:hover {
 
 header a {
     text-decoration: var(--no_underlineForLink);
-    color:black
+    color: black
 }
 
 header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 1vw 2vh  ;
+    margin: 0 1vw 2vh;
 }
 
 .header_globalRight {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-content: center; 
+    align-content: center;
 }
 
 nav {
@@ -87,16 +90,16 @@ footer ul {
 }
 
 
-main{
+main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 12px;
-    }
+}
 
 #imagePrincipale {
-    max-width: 662px;
-    height: 70%;
+    width: 565px;
+    height: 600px;
     border-radius: 50%;
     position: sticky;
     left: 73px;
@@ -108,9 +111,10 @@ main{
 }
 
 @keyframes imageTournerEnRond {
-    from{
+    from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -122,8 +126,8 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 50vw;
-    min-height: 100vh;
+    width: 50vw;
+    height: 100vh;
 }
 
 .sectionRight {
@@ -131,8 +135,8 @@ main{
 }
 
 #shopIcon {
-    position:relative;
-    top:11px;
+    position: relative;
+    top: 11px;
     margin-right: 12px;
 }
 
@@ -140,21 +144,24 @@ main{
     position: relative;
     right: 26px;
     margin: 12px;
-    padding: 0 1em ;
-    background:white;
-    color:#93684d;
+    padding: 0 1em;
+    background: white;
+    color: #93684d;
     font-weight: bold;
     height: var(--heighth_input);
     border-radius: var(--border-radius_input);
 }
-h2 {
-    font-size: 90px;
-}
+
+
 
 h1 {
     position: relative;
     top: 7px;
     font-family: 'Amatic SC', sans-serif;
+}
+
+h2 {
+    font-size: 6rem;
 }
 
 footer img {
@@ -165,3 +172,47 @@ footer img {
 footer ul {
     margin-right: 40px;
 }
+
+
+
+@media screen and (max-width:1023px) {
+
+    .sectionLeft {
+        width: 366px;
+        height: 43vh;
+        margin-top: 6rem;
+    }
+    #imagePrincipale {
+        width: 600px;
+        height: 505px;
+        margin-left: 0.5rem;
+    }
+    
+    body {
+        background-color: white; 
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    
+}
+
+
+
+/* tablette */
+@media screen and (max-width:1023px) {
+
+    .sectionLeft {
+        width: 366px;
+        height: 43vh;
+        margin-top: 6rem;
+    }
+    #imagePrincipale {
+        width: 200px;
+        height: 229px;
+        margin-left: 3rem;
+        margin-top: 6rem;
+    }
+}
+
